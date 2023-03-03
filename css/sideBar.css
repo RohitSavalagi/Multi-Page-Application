@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+html, body{
+    margin: 0;
+    background: #E5E5E5;
+}
+
+
+body{
+    font-family: Poppins;
+}
+
+.header {
+    position: absolute;
+    width:100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1px solid #EBEFF2;
+}
+.header__logo{
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3498DB;
+    padding: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header__action-items{
+    margin-right: 36px;
+}
+
+.header__action-item{
+    margin-right: 16px;
+    cursor: pointer;
+}
+.header__action-item:hover{
+    filter: brightness(1.1);
+}
+
+.header__action-item:last-child{
+    margin-right: 0;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    float: left;
+    position: sticky;
+    box-shadow: 6px 0px 18px 0px #0000000F;
+    width: 70px;
+    transition: width 0.5s;
+    height: 100vh;
+    top:  0px;
+}
+
+.sidebar--active{
+    transition: width 0.5s;
+    width: 256px;
+}
+
+.sidebar__svg--active{
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+.sidebar__tab-navigation{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ECF0F1;
+}
+
+.sidebar__svg{
+    display: inline-block;
+}
+
+.sidebar__bottom-items{
+    display: flex;
+    flex-grow: 1;
+    margin-top: 5px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 22px;
+    border-bottom: 1px solid #ECF0F1;
+    justify-content: space-between;
+}
+
+.sidebar__item{
+    position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: #34495E;
+    overflow: hidden;
+}
+
+.sidebar__text{
+    display: none;
+}
+
+.sidebar__text--active{
+    position: absolute;
+    margin-left: 15px;
+    display: inline-block;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+
+.sidebar__item:hover svg{
+    fill: #3498DB;
+}
+
+.sidebar__item:hover {
+    color: #3498DB;
+}
+
+.sidebar__text--toggle{
+    color: #BDC3C7;
+}
+
+.sidebar__text--toggle:hover{
+    color: #BDC3C7;
+}
+
+.sidebar__text:hover{
+    color: #3498DB;
+}
+
+.sidebar:hover .sidebar__item:not(:hover){
+    filter: brightness(1.2);
+    color: #7F8C8D;
+}
+
+svg{
+    cursor: pointer;
+}
+  
+svg{
+    fill: #7F8C8D;
+}
+  
+svg:hover{
+    fill: #3498DB;
+}

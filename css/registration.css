@@ -1,0 +1,120 @@
+html{
+    margin: 0 auto;
+}
+body{
+    overflow-y: hidden;
+}
+
+.login{
+    display: flex;
+    flex-grow: 1;
+}
+
+.login__logo-img{
+    height: 36px;
+    width: 56px;
+}
+
+.login__logo-wrapper{
+    flex-basis: 65.33%;
+    padding: 30px;
+    background: url("../img/Rectangle 16login.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.login__logo-text{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+.login__form-wrapper{
+    background-color: transparent;
+    flex-grow: 1;
+    position: relative;
+}
+
+.login__context{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #3498DB; 
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.login__header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+.login__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.login__form{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 300px;
+    margin-left: 5%;
+}
+
+.login__label{
+    font-family: Poppins;
+    font-size: 11px;
+    font-weight: 500;
+    color: #7F8C8D;
+}
+
+.login__input-feild{
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid #BDC3C7;
+    padding: 5px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    background-color:  transparent;
+}
+
+.login__btn{
+    display: block;
+    padding: 5px 10%;
+    margin: 20px auto;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    background: #3498DB;
+    border: 1px solid #2980B9;
+    box-shadow: 0px 4px 10px rgba(52, 152, 219, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.login__other-ways{
+    margin-top: 20px;
+    text-align: center;
+    color: #4C5862;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+}
+
+.link{
+    color: #3498DB;
+}
