@@ -107,9 +107,7 @@ opacity: .5;
 }
 
 @media (min-width: 768px) {
-  .carousel{
-    display: none;
-  }
+
   .product__categories {
     grid-template-columns: repeat(2, 1fr);
   }
