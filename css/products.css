@@ -6,7 +6,7 @@ body {
 
 body {
   position: relative;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -148,7 +148,7 @@ body {
   flex-grow: 1;
   align-self: baseline;
   padding: 10px;
-  font-family: Poppins;
+  font-family: 'Poppins' sans-serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.01em;
