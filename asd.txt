@@ -1,9 +1,0 @@
-JS Calculator
-Objective: Implement calculator
-
-* Technical requirements:
-1. Implement calculator with already attached layout for that.
-2. The set of entered numbers should be displayed on the calculator board when you click on the number keys.
-3. When clicking on the signs of the operators ```(*, /, +, -)``` nothing happens on the display - the program is waiting for the second number to be entered to perform the operation.
-4. If the user has entered one number, selected the operator, and entered the second number, then when you press both the = button and any of the operators, the result of the previous expression should appear in the scoreboard.
-5. When you press the M+ or M- keys on the left side of the display, you need to show a small letter m - this means that a number is stored in memory. Clicking on MRC will show the number from memory on the screen. Pressing MRC again should clear the memory.
