@@ -1,3 +1,6 @@
+import { sidebarToggler, sidebarToggle } from './utils.mjs';
+sidebarToggler.addEventListener('click', sidebarToggle);
+
 let tasks = [
     {
         title: "Berlin University iPad Pro 2020 (25 items)",

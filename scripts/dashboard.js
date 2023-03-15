@@ -1,3 +1,8 @@
+import { sidebarToggler, sidebarToggle } from './utils.mjs'
+
+
+sidebarToggler.addEventListener('click', sidebarToggle);
+
 
 const weekPopup = document.querySelector('.progess__week');
 const headerPopup = document.querySelector('.dashboard__graphic-link');
@@ -50,11 +55,14 @@ function setProgressValue(tasks){
     }
   });
   const progressInPcentage = (progress / tasks.length) * 100;
-  document.querySelector('.progess__indicator').style.width = progressInPcentage + '%';
-  console.log(document.querySelector('.progess__indicator').style.width);
- 
+  let progressBar = document.querySelector('progess');
+  if (progressBar) {
+    progressBar.max = tasks.length + '';
+    progressBar.value = progressInPcentage;
+  }
   document.querySelector('.progess__completed').innerText = progress;
   document.querySelector('.progess__total').innerText = tasks.length;
+
 
 }
 

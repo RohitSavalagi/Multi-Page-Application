@@ -34,19 +34,19 @@
                 <p class="sidebar__text sidebar__text--active sidebar__text--dashboard">Dashbord</p>
             </a>
             <a href="tasks.html" class="sidebar__item">
-                <svg class="sidebar__svg sidebar__dashboard-logo" width="19" height="16">
+                <svg class="sidebar__svg sidebar__dashboard-logo sidebar__tasks-logo" >
                     <use xlink:href="#tasks"></use>
                 </svg>
                 <p class="sidebar__text sidebar__text--active ">Tasks</p>
             </a>
             <a href="products.html" class="sidebar__item">
-                <svg class="sidebar__svg sidebar__dashboard-logo" width="20" height="18">
+                <svg class="sidebar__svg sidebar__products-logo" >
                     <use xlink:href="#products"></use>
                 </svg>
                 <p class="sidebar__text sidebar__text--active">Products</p>
             </a>
             <a href="contracts.html" class="sidebar__item">
-                <svg class="sidebar__svg sidebar__dashboard-logo" width="20" height="19">
+                <svg class="sidebar__svg sidebar__dashboard-logo sidebar__contracts-logo">
                     <use xlink:href="#contracts"></use>
                 </svg>
                 <p class="sidebar__text sidebar__text--active">contracts</p>
@@ -77,9 +77,7 @@
                     <p class="progress__text"><span class="progess__completed"></span> task completed out of <span class="progess__total"></span></p>
                     <p class="pogress__show">Show: <span class="progess__week">This Week</span><span class="progess__week-pop-up">This Week</span></p>
                 </div>
-                <div class="progress__bar">
-                    <div class="progess__indicator"></div>
-                </div>
+                <progress value="3" max="10"></progress>
             </div>
             <div class="dashboard__date-feild">
                 <div class="dashboard__current-date">
@@ -201,10 +199,7 @@
     </symbol>
     </svg>
         
-        
-        
-    <script src="scripts/sidebar.js"></script>   
-    <script src="scripts/dashboard.js"></script>     
+    <script type="module" src="scripts/dashboard.js"></script>     
 
 </body>
 </html>

@@ -118,3 +118,8 @@ body{
 .link{
     color: #3498DB;
 }
+
+.login__btn:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}

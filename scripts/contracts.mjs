@@ -1,4 +1,7 @@
+import { sidebarToggler, sidebarToggle } from './utils.mjs'
 
+
+sidebarToggler.addEventListener('click', sidebarToggle);
 
 let contracts = [
     {
@@ -97,12 +100,10 @@ function add(contracts) {
   document.querySelector('#more').addEventListener('click', () => {
     document.querySelector('.product__contracts').classList.toggle('product__contracts--sigle-line');
   });
-  
-  
 
 
   sidebarToggler.addEventListener('click', () => {
     document.querySelector('.contracts__wrapper').classList.toggle('contracts__wrapper--sidebar-open');
-    console.log( document.querySelector('.contracts__wrapper').classList)
+    document.querySelector('.contract__action-icons').classList.toggle('contract__action-icons--sidebar-open');
     
 });

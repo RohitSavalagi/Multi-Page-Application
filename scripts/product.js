@@ -1,3 +1,7 @@
+import { sidebarToggler, sidebarToggle } from './utils.mjs'
+sidebarToggler.addEventListener('click', sidebarToggle);
+
+
 const carousel = document.querySelector("[data-target='carousel']");
 const leftButton = document.querySelector("[data-action='slideLeft']");
 const rightButton = document.querySelector("[data-action='slideRight']");

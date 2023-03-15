@@ -19,6 +19,14 @@
 
 .contract__action-icons{
     display: grid;
+    padding-bottom: 1%;
+    margin-right: 93px;
+    transition: margin-right 0.2s;
+}
+
+.contract__action-icons--sidebar-open{
+    transition: margin-right 0.3s;
+    margin-right: 165px;
 }
 
 .controls{

@@ -105,6 +105,11 @@ body{
     color: #ffffff;
 }
 
+.login__btn:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
 .login__other-ways{
     margin-top: 20px;
     text-align: center;
