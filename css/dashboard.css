@@ -1,6 +1,4 @@
-main{
-    padding-top: 80px;
-}
+
 
 .sidebar__svg--dashboard{
     fill: #109CF1;
@@ -14,38 +12,31 @@ main{
 
 .dashboard{
     display: flex;
-    gap: 15px;
+    gap: 30px;
     justify-content: center;
+    margin-left: 220px;
+    margin-top: 30px;
+    transition: margin-left 0.3s;
+}
+
+.dashboard--sidebar-open{
+    transition: margin-left 0.3s;
+    margin-left: 70px;
 }
 
 .dashboard__over-view{
     background: #ffffff;
-    flex-basis: 65%;
+    flex-basis: 55%;
     padding: 24px;
-    max-height: 78vh;
-    overflow-y: scroll;
+    height: 78vh;
+    overflow-y: visible;
     margin-left: 10px;
     box-shadow: 0px 6px 18px 0px #0000000F;
     border-radius: 4px;
 }
 
-.dashboard__over-view::-webkit-scrollbar {
-    width: 5px;
-    background: #fff;
-    border-radius: 8px;
-}
-
-.dashboard__over-view::-webkit-scrollbar-thumb {
-    background: #aaa;
-    border-radius: 8px;
-}
-
-.dashboard__over-view::-webkit-scrollbar-thumb:hover {
-    background: #666;
-}
-
 .dashboard__visial_graph{
-    flex-basis: 20%;
+    flex-basis: 35%;
     margin-right: 10px;
 }
 
@@ -99,17 +90,19 @@ main{
     display: block;
 }
 
-.progess__visual-format{
-    width: 100%;
+.progress__bar{
     margin-bottom: 20px;
-}
-  
-progress::-moz-progress-bar {
-    background: lightblue;
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #EBEFF2;
 }
 
-progress::-webkit-progress-bar {
-    background: blue;
+.progess__indicator{
+    border-radius: 5px;
+    height: 4px;
+    width: 70%;
+    background: #2ECC71;
 }
 
 .dashboard__current-date{
@@ -165,8 +158,29 @@ progress::-webkit-progress-bar {
     padding-bottom: 25px;
 }
 
+.dashboard__items{
+    max-height: 60%;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+.dashboard__items::-webkit-scrollbar {
+    width: 5px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.dashboard__items::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 8px;
+}
+
+.dashboard__items::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
 .dashboard__item{
-    margin-bottom: 16px;
+    margin-top: 16px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
     padding: 8px 16px;
@@ -232,7 +246,8 @@ progress::-webkit-progress-bar {
     display: grid;
     grid-template-columns: 50px 2fr 1fr;
     align-items: center;
-    padding: 8px 0;
+    padding-top: 8px;
+    padding-bottom: 12px;
 }
 
 .dashboard__more-logo{
@@ -254,7 +269,7 @@ progress::-webkit-progress-bar {
 }
 
 .dashboard__visual-graphs{
-    flex-basis: 25%;
+    flex-basis: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -322,17 +337,18 @@ progress::-webkit-progress-bar {
 }
 
 .btn{
-    padding: 8px;
     font-size: 1rem;
     text-align: center;
     margin: 0 auto;
     text-align: center;
-    background-color: #109CF1;
-    border-radius: 4px;
+    color: #109CF1;
+    background: transparent;
 }
 
+
+
 .btn__wrapper{
-    margin-top: 10px;
+    margin-top: 50px;
     display: flex;
 }
 

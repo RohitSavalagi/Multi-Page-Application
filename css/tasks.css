@@ -32,8 +32,13 @@
     flex-direction: column;
     border-radius: 5px;
     padding: 20px;
-    padding-top: 100px;
-    margin: 0 auto;
+    margin-left: 220px;
+    transition: margin-left 0.3s;
+}
+
+.task--sidebar-open{
+    transition: margin-left 0.3s;
+    margin-left: 70px;
 }
 
 .task__status{
@@ -141,6 +146,14 @@ li{
 
 .task__due-date-date,
 .task__location {
+    margin: 0;
+}
+
+.tasks__list-itmes{
+    margin-bottom: 7px;
+}
+
+.tasks__list-itmes:last-of-type{
     margin: 0;
 }
 

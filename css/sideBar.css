@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 html, body{
     margin: 0;
     background: #E5E5E5;
 }
-
 
 body{
     font-family: Poppins;
 }
 
 .header {
-    position: absolute;
+    position: relative;
     width:100%;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,6 +28,21 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 22px;
+}
+
+.sidebar__logo{
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3498DB;
+    padding: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 21px;
 }
 
 .header__action-items{
@@ -52,18 +65,22 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    float: left;
-    position: sticky;
+    position: fixed;
     box-shadow: 6px 0px 18px 0px #0000000F;
-    width: 70px;
-    transition: width 0.5s;
+    width: 220px;
+    transition: width 0.2s;
     height: 100vh;
     top:  0px;
 }
 
 .sidebar--active{
-    transition: width 0.5s;
-    width: 256px;
+    transition: width 0.3s;
+    width: 70px;
+}
+
+.sidebar__svg {
+    transition: transform 0.5s;
+    transform: rotate(0deg);
 }
 
 .sidebar__svg--active{

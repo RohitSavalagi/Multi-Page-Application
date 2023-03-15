@@ -1,3 +1,4 @@
+
 const weekPopup = document.querySelector('.progess__week');
 const headerPopup = document.querySelector('.dashboard__graphic-link');
 
@@ -14,14 +15,15 @@ fetch("Json/dashboard_tasks.json")
   .then(res => res.json())
   .then(data => {
     tasks = data;
-    taskInsert(tasks, 3);
+    setProgressValue(data);
+    taskInsert(tasks, 2);
   });
 
 function taskInsert(tasks, load) {
   let html = "";
   for (let i = 0; i < load && i < tasks.length; i++) {
     const task = tasks[i];
-    html += `
+    taskElement.innerHTML += `
     <div class="dashboard__item">
       <div class="dashboard__title">
         <h1 class="dashboard__title-text">${task.task} ( ${task.items} items)</h1>
@@ -37,17 +39,34 @@ function taskInsert(tasks, load) {
       </div>
     </div>`;
   }
-  taskElement.innerHTML = html;
+  
 }
 
-let load = 3;
+function setProgressValue(tasks){
+  let progress = 0;
+  tasks.forEach(element => {
+    if(element.status === 'completed'){
+      progress++;
+    }
+  });
+  const progressInPcentage = (progress / tasks.length) * 100;
+  document.querySelector('.progess__indicator').style.width = progressInPcentage + '%';
+  console.log(document.querySelector('.progess__indicator').style.width);
+ 
+  document.querySelector('.progess__completed').innerText = progress;
+  document.querySelector('.progess__total').innerText = tasks.length;
+
+}
+
+let load = 2;
 document.querySelector('.btn').addEventListener('click' ,() => {
-  const remainingTasks = tasks.length - load;
-  if (remainingTasks >= 3) {
-    load += 3;
-    taskInsert(tasks, load);
-  } else {
-    taskInsert(tasks, tasks.length);
-    document.querySelector('.btn').remove();
-  }
+  taskInsert(tasks, tasks.length)
+  document.querySelector('.btn').remove();
+});
+
+
+
+sidebarToggler.addEventListener('click', () => {
+    document.querySelector('.dashboard').classList.toggle('dashboard--sidebar-open');
+    
 });

@@ -45,3 +45,7 @@ function addCategory(categories){
         container.appendChild(div);
     })
 }
+
+sidebarToggler.addEventListener('click', () => {
+  document.querySelector('.products').classList.toggle('products--sidebar-open');
+});

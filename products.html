@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sideBar.css">
@@ -12,11 +15,8 @@
 
 </head>
 <body>
-
-    
-
     <header class="header">
-        <h1 class="header__logo">FT</h1>
+        <h1 class="header__logo">Feature Tester</h1>
         <div class="header__action-items">
             <svg class="header__action-item header__notification " class="svg" width="16" height="20">
                 <use xlink:href="#notification"></use>
@@ -26,31 +26,31 @@
     </header>
     
     <aside class="sidebar">
-        <h1 class="header__logo">FT</h1>
+        <h1 class="sidebar__logo">Feature Tester</h1>
         <div class="sidebar__tab-navigation">
             <a href="dashboard.html" class="sidebar__item">
                 <svg class="sidebar__svg sidebar__dashboard-logo" width="19" height="18">
                     <use xlink:href="#dashboard"></use>
                 </svg>
-                <p class="sidebar__text">Dashbord</p>
+                <p class="sidebar__text sidebar__text--active">Dashbord</p>
             </a>
             <a href="tasks.html" class="sidebar__item">
                 <svg class="sidebar__svg sidebar__tasks-logo" width="19" height="16">
                     <use xlink:href="#tasks"></use>
                 </svg>
-                <p class="sidebar__text">tasks</p>
+                <p class="sidebar__text sidebar__text--active">Tasks</p>
             </a>
             <a href="products.html" class="sidebar__item">
                 <svg class="sidebar__svg sidebar__products-logo" width="20" height="18">
                     <use xlink:href="#products"></use>
                 </svg>
-                <p class="sidebar__text sidebar__text--current">Products</p>
+                <p class="sidebar__text sidebar__text--active sidebar__text--current">Products</p>
             </a>
             <a href="contracts.html" class="sidebar__item">
                 <svg class="sidebar__svg sidebar__contracts-logo" width="20" height="19">
                     <use xlink:href="#contracts"></use>
                 </svg>
-                <p class="sidebar__text">contracts</p>
+                <p class="sidebar__text sidebar__text--active">contracts</p>
             </a>
         </div>
         <div class="sidebar__bottom-items">
@@ -58,13 +58,13 @@
                 <svg class="sidebar__svg" width="18" height="18">
                     <use xlink:href="#logout"></use>
                 </svg>
-                <p class="sidebar__text">Logout</p>
+                <p class="sidebar__text sidebar__text--active">Logout</p>
             </a>
             <a href="#" class="sidebar__item sidebar__svg--toggle">
-                <svg class="sidebar__svg sidebar__rotate" width="8" height="12">
+                <svg class="sidebar__svg sidebar__rotate sidebar__svg--active" width="8" height="12">
                     <use xlink:href="#right-arrow"></use>
                 </svg>
-                <p class="sidebar__text sidebar__text--toggle">Toggle Sidebar</p>
+                <p class="sidebar__text sidebar__text--active sidebar__text--toggle">Toggle Sidebar</p>
             </a>
         </div>
     </aside>
